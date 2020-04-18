@@ -1,0 +1,23 @@
+.scroll{
+    overflow:scroll;
+    width: auto;
+    height: 20em;
+    border: 2px;
+    
+}
+.title-content{
+    padding: 100px;
+}
+.virusimage{
+    width: 100%;
+}
+.badge{
+    width: 200%;
+}
+
+.card{
+    background-color: aquamarine;
+}
+.card-header{
+    text-align: center;
+}
