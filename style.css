@@ -15,9 +15,56 @@
     width: 200%;
 }
 
-.card{
-    background-color: aquamarine;
-}
+
 .card-header{
     text-align: center;
+}
+.update-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+    
+}
+#dailyUpdates{
+   
+    text-align: center;
+    background-color: #EA2027;
+    color: #ffff;
+}
+.fundDetails{
+    padding: 100px;
+    
+}
+.card_content{
+    margin: 30px;
+}
+.a-icon{
+    margin: 5% 3% 3%;
+}
+.app {
+    text-align: center;
+}
+.donate{
+    text-align: center;
+}
+#footer{
+    padding: 50px;
+    text-align: center;
+   
+    
+
+}
+.ftr{
+    padding: 10px;
+
+}
+.features-icon:hover{
+    color: #f5edee;
+}
+.footer-content{
+    font-size: 0.75rem;
+    padding: 10px ;
+}
+.ftr:hover{
+    color: rgb(22, 22, 22);
 }
