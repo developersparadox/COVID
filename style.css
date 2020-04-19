@@ -97,7 +97,23 @@ body{
     margin: 10px;
 }
 @media(max-width: 1024px){
-    .vimg{
-        left: 25px;
+    .title-content{
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    #world-corona-stats{
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+    }
+    .app{
+        padding-bottom: 10px;
+    }
+
+    #govAPP{
+        width: 500px;
     }
 }
