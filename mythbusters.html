@@ -3,119 +3,231 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Mythbusters</title>
+        <meta name="description" content="Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, tests, and death toll due to the COVID-19">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <script src="" async defer></script>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/578a6fcb7e.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="circle-corona.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                nCOVID-19
+              </a>  
         
-        <h1>Mythbusters</h1>
-        <ol>
-            <li>
-                COVID-19 virus can be transmitted in areas with hot and humid climates.
-            </li>
-            <li>
-                Cold weather and snow CANNOT kill the new coronavirus.
-            </li>
-            <li>
-                Taking a hot bath does not prevent the new coronavirus disease.
-            </li>
-            <li>
-                The new coronavirus CANNOT be transmitted through mosquito bites.
-            </li>
-            <li>
-                Are hand dryers effective in killing the new coronavirus? <br>
-                No. Hand dryers are not effective in killing the 2019-nCoV.
-            </li>
-            <li>
-                Can an ultraviolet disinfection lamp kill the new coronavirus?<br>
-                UV lamps should not be used to sterilize hands or other areas of skin as UV radiation can cause skin irritation.
-            </li>
-            <li>
-                Can spraying alcohol or chlorine all over your body kill the new coronavirus?<br>
-                No. Spraying alcohol or chlorine all over your body will not kill viruses that have already entered your body.
-            </li>
-            <li>
-                Do vaccines against pneumonia protect you against the new coronavirus?<br>
-                No. Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, do not provide protection against the new coronavirus.
-            </li>
-            <li>
-                Can regularly rinsing your nose with saline help prevent infection with the new coronavirus?<br>
-                No. There is no evidence that regularly rinsing the nose with saline has protected people from infection with the new coronavirus.
-            </li>
-            <li>
-                Can eating garlic help prevent infection with the new coronavirus?<br>
-                Garlic is a healthy food that may have some antimicrobial properties. However, there is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus.
-            </li>
-            <li>
-                Are antibiotics effective in preventing and treating the new coronavirus?<br>
-                No, antibiotics do not work against viruses, only bacteria.
-            </li>
-        </ol>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Map
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <img src="map.png" alt="covid_effected_world_map" width="50%">
+                        </div>
+                    
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Facts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="about_virus.html">About the virus</a>
+                      <a class="dropdown-item" href="mythbusters.html">Mythbusters</a>
+                     
+                    </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact us
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <form action="mailto:developersparadox@gmail.com" method="post" enctype="text/plain">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Your Message</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                  </div>
+                </li>   
+                          
+              </ul>
+              <ul class="navbar-nav  justify-content-center">
+                               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Be a saviour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#govAPP">Download Arogya setu Gov App</a>
+                      <a class="dropdown-item" href="#govAPP">Donate to PMCARE funds</a>
+                      
+                    </div>
+                
+               
+              </ul>
+             
+             
+            </div>
+          </nav>
 
-        <h1>How can I protect myself?</h1>
-        <h2>Handwashing</h2>
-        <ol>
-            <li>
-                A number of governments advise against all non-essential travel to countries and areas affected by the outbreak.
-            </li>
-            <li>
-                There are misconceptions circulating about how to prevent infection: rinsing the nose, gargling with mouthwash, and eating garlic are not effective.
-            </li>
-            <li>
-                The CDC recommends that people wash hands often with soap and water for at least 20 seconds, especially after going to the toilet or when hands are visibly dirty.
-                <ul>
-                    <li>
-                        It further recommended using an alcohol-based hand sanitiser with at least 60% alcohol by volume (or 120 proof) when soap and water are not readily available.
-                    </li>
-                    <li>
-                        The WHO also advise people to avoid touching the eyes, nose, or mouth with unwashed hands.
-                    </li>
-                </ul>
-            </li>
 
-        </ol>
-        <h2>Respiratory hygiene</h2>
-        <ol>
-            <li>
-                Health organizations recommended that people cover their mouth and nose with a tissue when coughing or sneezing (which should then be disposed of immediately), or with a sleeve if a tissue is not available.
-            </li>
-            <li>
-                The use of surgical masks by those who may be infected has also been recommended, as they can limit the volume and travel distance of expiratory droplets dispersed when talking, sneezing, and coughing.
-            </li>
-            <li>
-                There is no evidence to show that the wearing of surgical masks by uninfected people at low risk is effective.
-            </li>
-            <li>
-                Only China has specifically recommended the use of masks by healthy members of the public, while face masks have been widely used by healthy people in Hong Kong, Japan, Malaysia, and Singapore.
-            </li>
-        </ol>
-        <h2>How to use a mask</h2>
-        <ol>
-            <li>
-                Wear a mask if you are coughing or sneezing.
-            </li>
-            <li>
-                If you wear a mask, then you must know how to use it and dispose of it properly.
-            </li>
-            <li>
-                Before putting on a mask, clean your hands with alcohol-based hand rub or soap and water.
-            </li>
-            <li>
-                Cover your mouth and nose with the mask and make sure there are no gaps between your face and the mask.
-            </li>
-            <li>
-                Avoid touching the mask while using it.
-            </li>
-            <li>
-                Replace the mask with a new one as soon as it is damp and do not re-use single-use masks.
-            </li>
-            <li>
-                To remove the mask, remove it from behind (do not touch the front of the mask), discard it immediately in a closed bin, and then clean your hands with alcohol-based hand rub or soap and water.
-            </li>
-        </ol>
+
+
+
+        <section id="myth-content">
+
+            <h1>Mythbusters</h1>
+            <ol>
+                <li>
+                    COVID-19 virus can be transmitted in areas with hot and humid climates.
+                </li>
+                <li>
+                    Cold weather and snow CANNOT kill the new coronavirus.
+                </li>
+                <li>
+                    Taking a hot bath does not prevent the new coronavirus disease.
+                </li>
+                <li>
+                    The new coronavirus CANNOT be transmitted through mosquito bites.
+                </li>
+                <li>
+                    Are hand dryers effective in killing the new coronavirus? <br>
+                    No. Hand dryers are not effective in killing the 2019-nCoV.
+                </li>
+                <li>
+                    Can an ultraviolet disinfection lamp kill the new coronavirus?<br>
+                    UV lamps should not be used to sterilize hands or other areas of skin as UV radiation can cause skin irritation.
+                </li>
+                <li>
+                    Can spraying alcohol or chlorine all over your body kill the new coronavirus?<br>
+                    No. Spraying alcohol or chlorine all over your body will not kill viruses that have already entered your body.
+                </li>
+                <li>
+                    Do vaccines against pneumonia protect you against the new coronavirus?<br>
+                    No. Vaccines against pneumonia, such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, do not provide protection against the new coronavirus.
+                </li>
+                <li>
+                    Can regularly rinsing your nose with saline help prevent infection with the new coronavirus?<br>
+                    No. There is no evidence that regularly rinsing the nose with saline has protected people from infection with the new coronavirus.
+                </li>
+                <li>
+                    Can eating garlic help prevent infection with the new coronavirus?<br>
+                    Garlic is a healthy food that may have some antimicrobial properties. However, there is no evidence from the current outbreak that eating garlic has protected people from the new coronavirus.
+                </li>
+                <li>
+                    Are antibiotics effective in preventing and treating the new coronavirus?<br>
+                    No, antibiotics do not work against viruses, only bacteria.
+                </li>
+            </ol>
+    
+            <h1>How can I protect myself?</h1>
+            <h2>Handwashing</h2>
+            <ol>
+                <li>
+                    A number of governments advise against all non-essential travel to countries and areas affected by the outbreak.
+                </li>
+                <li>
+                    There are misconceptions circulating about how to prevent infection: rinsing the nose, gargling with mouthwash, and eating garlic are not effective.
+                </li>
+                <li>
+                    The CDC recommends that people wash hands often with soap and water for at least 20 seconds, especially after going to the toilet or when hands are visibly dirty.
+                    <ul>
+                        <li>
+                            It further recommended using an alcohol-based hand sanitiser with at least 60% alcohol by volume (or 120 proof) when soap and water are not readily available.
+                        </li>
+                        <li>
+                            The WHO also advise people to avoid touching the eyes, nose, or mouth with unwashed hands.
+                        </li>
+                    </ul>
+                </li>
+    
+            </ol>
+            <h2>Respiratory hygiene</h2>
+            <ol>
+                <li>
+                    Health organizations recommended that people cover their mouth and nose with a tissue when coughing or sneezing (which should then be disposed of immediately), or with a sleeve if a tissue is not available.
+                </li>
+                <li>
+                    The use of surgical masks by those who may be infected has also been recommended, as they can limit the volume and travel distance of expiratory droplets dispersed when talking, sneezing, and coughing.
+                </li>
+                <li>
+                    There is no evidence to show that the wearing of surgical masks by uninfected people at low risk is effective.
+                </li>
+                <li>
+                    Only China has specifically recommended the use of masks by healthy members of the public, while face masks have been widely used by healthy people in Hong Kong, Japan, Malaysia, and Singapore.
+                </li>
+            </ol>
+            <h2>How to use a mask</h2>
+            <ol>
+                <li>
+                    Wear a mask if you are coughing or sneezing.
+                </li>
+                <li>
+                    If you wear a mask, then you must know how to use it and dispose of it properly.
+                </li>
+                <li>
+                    Before putting on a mask, clean your hands with alcohol-based hand rub or soap and water.
+                </li>
+                <li>
+                    Cover your mouth and nose with the mask and make sure there are no gaps between your face and the mask.
+                </li>
+                <li>
+                    Avoid touching the mask while using it.
+                </li>
+                <li>
+                    Replace the mask with a new one as soon as it is damp and do not re-use single-use masks.
+                </li>
+                <li>
+                    To remove the mask, remove it from behind (do not touch the front of the mask), discard it immediately in a closed bin, and then clean your hands with alcohol-based hand rub or soap and water.
+                </li>
+            </ol>
+
+        </section>
+
+
+
+
+        <footer id="footer">
+
+
+            <a href="https://twitter.com/avinash_sethia"><i class="fab fa-twitter ftr"></i></a>
+            <a href="https://www.facebook.com/avi.an2011"><i class="fab fa-facebook-f ftr"></i></a>
+            <a href="https://www.instagram.com/avinash.sethia/"><i class="fab fa-instagram ftr"></i></a>
+            <a href="https://www.linkedin.com/in/avinash-sethiya-766984113/"><i class="fab fa-linkedin-in ftr"></i></a>
+            <div class="footer-content">
+              <p>The content above is a sole research from the internet and goverment sources.</p>
+              <p>© Copyright 2020 <a href="https://twitter.com/avinash_sethia">Avinash sethia</a> All rights reserved.</p>
+            </div>
+                
+            
+              </footer>
+         
+       
        
     </body>
 </html>

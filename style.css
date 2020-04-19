@@ -1,3 +1,7 @@
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
 .scroll{
     overflow:scroll;
     width: auto;
@@ -18,6 +22,12 @@
 
 .card-header{
     text-align: center;
+
+}
+
+.cd-in{
+    padding: 50px;
+    
 }
 .update-image{
     width: 10%;
@@ -54,12 +64,19 @@
     
 
 }
+#features{
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #ecf0f1;
+    z-index: 1;
+    position: relative;
+}
 .ftr{
     padding: 10px;
 
 }
 .features-icon:hover{
-    color: #f5edee;
+    color: #5a5757;
 }
 .footer-content{
     font-size: 0.75rem;
@@ -67,4 +84,20 @@
 }
 .ftr:hover{
     color: rgb(22, 22, 22);
+}
+
+#dailyUpdates{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card-img-top{
+    padding: 10px;
+}
+.btn{
+    margin: 10px;
+}
+@media(max-width: 1024px){
+    .vimg{
+        left: 25px;
+    }
 }
