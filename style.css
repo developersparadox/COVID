@@ -98,8 +98,8 @@ body{
 }
 @media(max-width: 1024px){
     .title-content{
-        
-        padding-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
       
         
     }
