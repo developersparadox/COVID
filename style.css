@@ -99,6 +99,7 @@ body{
 @media(max-width: 1024px){
     .title-content{
         padding-left: 40px;
+        padding-right: 0px;
       
         
     }
