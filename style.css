@@ -98,13 +98,13 @@ body{
 }
 @media(max-width: 1024px){
     .title-content{
-        padding-left: 0px;
-        padding-right: 0px;
+        
+        padding-right: 100px;
       
         
     }
     .vsi , .vsw{
-        width: 400px;
+        width: 320px;
         height: 300;
     }
     
