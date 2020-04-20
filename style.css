@@ -97,9 +97,14 @@ body{
     margin: 10px;
 }
 @media(max-width: 1024px){
+
+    body{
+        margin-right: 0px;
+    }
     .title-content{
         padding-left: 50px;
         padding-right: 50px;
+        margin-right: 0px;
       
         
     }
@@ -112,5 +117,8 @@ body{
 
     #govAPP{
         width: 400px;
+    }
+    .fundDetails{
+        margin-right: 0px;
     }
 }
