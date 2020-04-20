@@ -98,22 +98,18 @@ body{
 }
 @media(max-width: 1024px){
     .title-content{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 40px;
+      
         
     }
-    #world-corona-stats{
-
-        padding-left: 10px;
-        padding-right: 10px;
-
-
+    .vsi , .vsw{
+        width: 320px;
+        height: 300;
     }
-    .app{
-        padding-bottom: 10px;
-    }
+    
+    
 
     #govAPP{
-        width: 500px;
+        width: 400px;
     }
 }
